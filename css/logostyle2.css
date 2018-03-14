@@ -1,0 +1,123 @@
+.text-effect {
+  overflow: hidden;
+  position: relative;
+  filter: contrast(110%) brightness(190%); }
+
+.neon {
+  position: relative;
+  background: black;
+  color: transparent; }
+  .neon::before, .neon::after {
+    content: attr(data-text);
+    color: white;
+    filter: blur(0.015em);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; }
+  .neon::after {
+    mix-blend-mode: difference; }
+
+.gradient,
+.spotlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10; }
+
+.gradient {
+  background: linear-gradient(45deg, yellow, red, blue);
+  background-size: 300% 300%;
+  -webkit-animation: NeonG 5s ease infinite;
+  -moz-animation: NeonG 5s ease infinite;
+  animation: NeonG 5s ease infinite;
+  mix-blend-mode: multiply; }
+
+@-webkit-keyframes NeonG {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@-moz-keyframes NeonG {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes NeonG {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+.spotlight {
+  animation: light 5s infinite linear;
+  background: linear-gradient(to bottom, white, transparent 25%) 0 0/25% 25%, linear-gradient(to top, white, black 25%) 50% 50%/12.5% 12.5%;
+  top: -100%;
+  left: -100%;
+  mix-blend-mode: color-dodge; }
+
+@keyframes light {
+  100% {
+    transform: translate3d(50%, 50%, 0); } }
+.neon,
+.neont {
+  font: 400 60px 'Lato', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0; }
+  .neon:focus,
+  .neont:focus {
+    outline: none;
+    border: 1px dotted white; }
+
+.neont {
+  position: absolute;
+  top: 0px;
+  color: rgba(20, 20, 20, 0.8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0,0,10px, white;
+  background-image: linear-gradient(black 30%, white 39%, black 40%, white 50%, black 60%, white 61%, black 70%);
+  background-size: 150% 150%;
+  -webkit-animation: Neont 3s infinite linear;
+  -moz-animation: Neont 3s infinite linear;
+  animation: Neont 3s infinite linear; }
+
+@-webkit-keyframes Neont {
+  0% {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 100% 100%; }
+  100% {
+    background-position: 0% 0%; } }
+@-moz-keyframes Neont {
+  0% {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 100% 100%; }
+  100% {
+    background-position: 0% 0%; } }
+@keyframes Neont {
+  0% {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 100% 100%; }
+  100% {
+    background-position: 0% 0%; } }
+body section {
+  background: black;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+
+# sourceMappingURL=logostyle2.css.map 

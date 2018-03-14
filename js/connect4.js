@@ -1,7 +1,10 @@
+
+
 class Connect4 {                        //This is constructing the board
   constructor(selector) {
     this.ROWS = 6;
     this.COLS = 7;
+    this.maxPieces = 4;
     this.player = 'red';                // starts with red player
     this.selector = selector;
     this.isGameOver = false;
@@ -110,7 +113,7 @@ class Connect4 {                        //This is constructing the board
       const total = 1 +
         checkDirection(directionA) +
         checkDirection(directionB);
-      if (total >= 5) {
+      if (total >= that.maxPieces) {
         return that.player;
       } else {
         return null;
@@ -140,6 +143,14 @@ class Connect4 {                        //This is constructing the board
   }
 
   restart () {
+    this.createGrid();
+    this.onPlayerMove();
+  }
+
+  gameBigger () {
+    this.maxPieces = 5;
+    this.ROWS = 7;
+    this.COLS = 8;
     this.createGrid();
     this.onPlayerMove();
   }
