@@ -30,7 +30,7 @@
 
 .gradient {
   background: linear-gradient(45deg, yellow, red, blue);
-  background-size: 300% 300%;
+  /* background-size: 300% 300%; */
   -webkit-animation: NeonG 5s ease infinite;
   -moz-animation: NeonG 5s ease infinite;
   animation: NeonG 5s ease infinite;
@@ -112,12 +112,14 @@
     background-position: 100% 100%; }
   100% {
     background-position: 0% 0%; } }
-body section {
-  background: black;
-  display: flex;
+body {
+  /* background: black; */
+  /* display: flex; */
   min-height: 100vh;
   justify-content: center;
   align-content: center;
   align-items: center; }
 
-# sourceMappingURL=logostyle2.css.map 
+
+
+# sourceMappingURL=logostyle2.css.map

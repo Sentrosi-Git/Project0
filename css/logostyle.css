@@ -54,9 +54,9 @@
 body section {
   background: black;
   background: transparent;
-  display: flex;
+  /* display: flex; */
   min-height: 100vh;
-   justify-content: center;
+  justify-content: center;
   align-content: center;
   align-items: center;
 
