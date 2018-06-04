@@ -36,8 +36,8 @@ body {
 }
 
 .col.empty {
-/* cursor: url('mousecursor.png'), default; */
-cursor: crosshair;
+cursor: url('../img/mousecursor.png'), default;
+/* cursor: crosshair; */
 }
 
 .next-red {
@@ -63,9 +63,10 @@ div {
 }
 
 h4 {
-  font-family: 'VT323', monospace;
+  font-family: 'Audiowide', cursive;
   font-size: 40px;
-  color: white;
+  color: #FF00CC;
+  text-transform: uppercase;
 }
 * { box-sizing: border-box; }
 .video-background {

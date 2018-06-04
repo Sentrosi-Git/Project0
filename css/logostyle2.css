@@ -1,11 +1,13 @@
 .text-effect {
   overflow: hidden;
   position: relative;
+  text-align: center;
   filter: contrast(110%) brightness(190%); }
 
 .neon {
   position: relative;
   background: black;
+  text-align: center;
   color: transparent; }
   .neon::before, .neon::after {
     content: attr(data-text);
@@ -30,7 +32,7 @@
 
 .gradient {
   background: linear-gradient(45deg, yellow, red, blue);
-  /* background-size: 300% 300%; */
+  background-size: 300% 300%;
   -webkit-animation: NeonG 5s ease infinite;
   -moz-animation: NeonG 5s ease infinite;
   animation: NeonG 5s ease infinite;
@@ -71,7 +73,7 @@
 .neont {
   font: 400 60px 'Lato', sans-serif;
   text-transform: uppercase;
-  text-align: center;
+  text-align: justify;
   margin: 0; }
   .neon:focus,
   .neont:focus {

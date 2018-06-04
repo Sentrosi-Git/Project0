@@ -52,11 +52,12 @@ h1 {
   100% {
     background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0; } }
 .btn-5 {
-  color: #0033FF; }
+  color: #0033FF;
+margin-top: 260px;}
   .btn-5:hover {
     animation: blinds 0.75s linear forwards;
-    background: linear-gradient(0deg, #0033FF 25%, transparent 25%) 0 0/0.5em 0.5em, linear-gradient(0deg, #FD1C03 50%, transparent 50%) 0 0/1em 1em;
-    color: #bf00ff; }
+    background: linear-gradient(0deg, #FF0000 25%, transparent 25%) 0 0/0.5em 0.5em, linear-gradient(0deg, #099FFF 50%, transparent 50%) 0 0/1em 1em;
+    color: #FF0000; }
 
 @keyframes blinds {
   100% {
